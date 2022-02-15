@@ -1,1 +1,35 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: ms-email
+
+  datasource:
+    url: jdbc:postgresql://localhost:54330/ms-email
+    username: postgres
+    password: root
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate.format_sql: true
+
+  mail:
+    properties:
+      mail:
+        smtp:
+          starttls:
+            enable: true
+          auth: true
+    host: smtp.gmail.com
+    username: rafaelbarros.softwareengineer@gmail.com
+    password: ***
+    port: 587
+
+
+
+
 
