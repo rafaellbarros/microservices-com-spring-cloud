@@ -29,6 +29,9 @@ spring:
     password: ***
     port: 587
 
+  rabbitmq:
+    addresses: amqps://vegxxkzn:***@shrimp.rmq.cloudamqp.com/vegxxkzn
+    queue: ms.email
 
 
 

@@ -30,7 +30,7 @@ public class Email implements Serializable {
 
     @Id
     @GeneratedValue(strategy= GenerationType.AUTO)
-    private Long emailId;
+    private UUID emailId;
     private String ownerRef;
     private String emailFrom;
     private String emailTo;
