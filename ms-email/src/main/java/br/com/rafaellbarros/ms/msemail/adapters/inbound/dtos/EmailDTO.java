@@ -1,4 +1,4 @@
-package br.com.rafaellbarros.ms.msemail.model.dto;
+package br.com.rafaellbarros.ms.msemail.adapters.inbound.dtos;
 
 import lombok.Data;
 

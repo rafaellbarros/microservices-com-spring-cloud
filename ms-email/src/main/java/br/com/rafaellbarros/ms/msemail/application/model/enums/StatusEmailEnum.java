@@ -1,4 +1,4 @@
-package br.com.rafaellbarros.ms.msemail.model.enums;
+package br.com.rafaellbarros.ms.msemail.application.model.enums;
 
 /**
  * created by:

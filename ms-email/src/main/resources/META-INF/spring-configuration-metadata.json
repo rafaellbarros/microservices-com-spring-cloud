@@ -1,0 +1,28 @@
+{
+  "properties": [
+    {
+      "name": "database.config.url",
+      "type": "java.lang.String",
+      "description": "Description for database.config.url."
+    },
+    {
+      "name": "database.config.username",
+      "type": "java.lang.String",
+      "description": "Description for database.config.username."
+    },
+    {
+      "name": "database.config.password",
+      "type": "java.lang.String",
+      "description": "Description for database.config.password."
+    },
+    {
+      "name": "spring.rabbitmq.uri",
+      "type": "java.lang.String",
+      "description": "Description for spring.rabbitmq.uri."
+    },
+    {
+      "name": "spring.rabbitmq.queue",
+      "type": "java.lang.String",
+      "description": "Description for spring.rabbitmq.queue."
+    }
+  ] }

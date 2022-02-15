@@ -1,16 +1,17 @@
-package br.com.rafaellbarros.ms.msemail.config.rabbitmq;
+package br.com.rafaellbarros.ms.msemail.adapters.configuration;
 
 import org.springframework.amqp.core.Queue;
+import org.springframework.amqp.rabbit.connection.CachingConnectionFactory;
+import org.springframework.amqp.rabbit.connection.ConnectionFactory;
 import org.springframework.amqp.support.converter.Jackson2JsonMessageConverter;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-
 /**
  * created by:
  *
- * @author rafael for DevDusCorre <rafaelbarros.softwareengineer@gmail.com> on 14/02/2022
+ * @author rafael for DevDusCorre <rafaelbarros.softwareengineer@gmail.com> on 15/02/2022
  */
 
 @Configuration
@@ -18,6 +19,16 @@ public class RabbitMQConfig {
 
     @Value("${spring.rabbitmq.queue}")
     private String queue;
+
+    @Value("${spring.rabbitmq.uri}")
+    private String uri;
+
+    @Bean
+    public ConnectionFactory rabbitConnectionFactory() {
+        var connectionFactory = new CachingConnectionFactory();
+        connectionFactory.setUri(uri);
+        return connectionFactory;
+    }
 
     @Bean
     public Queue queue() {

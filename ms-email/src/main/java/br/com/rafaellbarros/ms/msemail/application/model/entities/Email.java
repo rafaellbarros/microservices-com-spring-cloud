@@ -1,6 +1,6 @@
-package br.com.rafaellbarros.ms.msemail.model.entity;
+package br.com.rafaellbarros.ms.msemail.application.model.entities;
 
-import br.com.rafaellbarros.ms.msemail.model.enums.StatusEmailEnum;
+import br.com.rafaellbarros.ms.msemail.application.model.enums.StatusEmailEnum;
 import lombok.Data;
 
 import javax.persistence.Column;
