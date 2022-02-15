@@ -1,7 +1,7 @@
 package br.com.rafaellbarros.ms.msemail.adapters.inbound.consumers;
 
-import br.com.rafaellbarros.ms.msemail.adapters.inbound.dtos.EmailDTO;
-import br.com.rafaellbarros.ms.msemail.application.model.entities.Email;
+import br.com.rafaellbarros.ms.msemail.adapters.dtos.EmailDTO;
+import br.com.rafaellbarros.ms.msemail.application.domain.Email;
 import br.com.rafaellbarros.ms.msemail.application.ports.EmailServicePort;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;

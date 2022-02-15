@@ -1,7 +1,9 @@
-package br.com.rafaellbarros.ms.msemail.application.model.entities;
+package br.com.rafaellbarros.ms.msemail.application.domain;
 
-import br.com.rafaellbarros.ms.msemail.application.model.enums.StatusEmailEnum;
+import br.com.rafaellbarros.ms.msemail.application.domain.enums.StatusEmailEnum;
 import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -20,23 +22,14 @@ import java.util.UUID;
  * @author rafael for DevDusCorre <rafaelbarros.softwareengineer@gmail.com> on 14/02/2022
  */
 
-@Data
-@Entity
-@Table(name = "TB_EMAIL")
-public class Email implements Serializable {
-
-    @Serial
-    private static final long serialVersionUID = -3499534654183959667L;
-
-    @Id
-    @GeneratedValue(strategy= GenerationType.AUTO)
+@Getter
+@Setter
+public class Email {
     private UUID emailId;
     private String ownerRef;
     private String emailFrom;
     private String emailTo;
     private String subject;
-
-    @Column(columnDefinition = "TEXT")
     private String text;
     private LocalDateTime sendDateEmail;
     private StatusEmailEnum statusEmail;

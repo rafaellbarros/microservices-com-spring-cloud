@@ -31,7 +31,7 @@ spring:
     port: 587
 
   rabbitmq:
-    uri: amqps://***:***@shrimp.rmq.cloudamqp.com/***
+    uri: amqps://***:***shrimp.rmq.cloudamqp.com/***
     queue: ms.email
 
 
